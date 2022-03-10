@@ -1,15 +1,10 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "0.0.1",
   "npmClient": "pnpm",
   "command": {
     "publish": {
-      "ignoreChanges": [
-        "*.md",
-        "**/__tests__/**"
-      ],
+      "ignoreChanges": ["*.md", "**/__tests__/**"],
       "message": "chore(release): publish"
     }
   }

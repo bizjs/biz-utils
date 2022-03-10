@@ -27,5 +27,9 @@
   },
   "bugs": {
     "url": "https://github.com/biz-lab/biz-utils/issues"
+  },
+  "gitHead": "e1eefdc73cf2426e572e65e816a1793a81295bec",
+  "publishConfig": {
+    "access": "public"
   }
 }
