@@ -1,6 +1,6 @@
 {
   "name": "@hstar/biz-utils",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "The biz utils for web develpoment.",
   "keywords": [
     "biz",
@@ -27,9 +27,5 @@
   },
   "bugs": {
     "url": "https://github.com/biz-lab/biz-utils/issues"
-  },
-  "dependencies": {
-  },
-  "peerDependencies": {
   }
 }
