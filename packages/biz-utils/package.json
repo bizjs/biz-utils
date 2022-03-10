@@ -1,0 +1,35 @@
+{
+  "name": "@hstar/biz-utils",
+  "version": "0.1.0",
+  "description": "The biz utils for web develpoment.",
+  "keywords": [
+    "biz",
+    "utils"
+  ],
+  "author": "hstarorg <hm910705@163.com>",
+  "homepage": "https://github.com/biz-lab/biz-utils#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/__tests__"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "test": "umi-test",
+    "test:cov": "umi-test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biz-lab/biz-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/biz-lab/biz-utils/issues"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
