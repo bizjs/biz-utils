@@ -1,6 +1,6 @@
 {
-  "name": "@hstar/biz-utils",
-  "version": "0.0.2",
+  "name": "@bizjs/biz-utils",
+  "version": "0.0.0",
   "description": "The biz utils for web develpoment.",
   "keywords": [
     "biz",
