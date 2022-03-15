@@ -1,7 +1,10 @@
 # biz-utils
 The front-end biz utils.
 
+若想参与贡献，可在：https://github.com/bizjs/biz-utils/projects/1 认领 Task
+
 ## 如何开始
+
 
 > 推荐使用 `pnpm` 作为包管理工具
 
