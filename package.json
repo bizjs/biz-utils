@@ -12,8 +12,9 @@
     "test:cov": "lerna run test:cov --stream",
     "pub": "npm run build && lerna publish",
     "docs:build": "dumi build && node ./scripts/add_base.js",
+    "analyze":"cross-env ANALYZE=1 dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "pub:doc":"npm run docs:build && npm run docs:deploy"
+    "pub:doc": "npm run docs:build && npm run docs:deploy"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -22,6 +23,7 @@
     "@types/lodash.set": "^4.3.6",
     "@umijs/test": "^3.0.5",
     "antd": "^4.17.3",
+    "cross-env": "^7.0.3",
     "dumi": "^1.0.17",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
