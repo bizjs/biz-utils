@@ -11,7 +11,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist",
@@ -32,5 +32,11 @@
   "gitHead": "e1eefdc73cf2426e572e65e816a1793a81295bec",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.0",
+    "decimal.js": "^10.3.1",
+    "lodash": "^4.17.21",
+    "url-parse": "^1.5.10"
   }
 }
