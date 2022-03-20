@@ -12,7 +12,7 @@
     "test:cov": "lerna run test:cov --stream",
     "pub": "npm run build && lerna publish",
     "docs:build": "dumi build && node ./scripts/add_base.js",
-    "analyze":"cross-env ANALYZE=1 dumi build",
+    "analyze": "cross-env ANALYZE=1 dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "pub:doc": "npm run docs:build && npm run docs:deploy"
   },
@@ -35,5 +35,8 @@
     "react-dom": "^17.0.2",
     "ts-jest": "^27.1.1",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.0"
   }
 }

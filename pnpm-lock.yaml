@@ -8,6 +8,7 @@ specifiers:
   '@umijs/test': ^3.0.5
   antd: ^4.17.3
   cross-env: ^7.0.3
+  dayjs: ^1.11.0
   dumi: ^1.0.17
   father-build: ^1.17.2
   gh-pages: ^3.0.0
@@ -19,6 +20,9 @@ specifiers:
   react-dom: ^17.0.2
   ts-jest: ^27.1.1
   typescript: ^4.4.4
+
+dependencies:
+  dayjs: 1.11.0
 
 devDependencies:
   '@testing-library/jest-dom': 5.16.2
@@ -6090,6 +6094,10 @@ packages:
   /dayjs/1.10.8:
     resolution: {integrity: sha512-wbNwDfBHHur9UOzNUjeKUOJ0fCb0a52Wx0xInmQ7Y8FstyajiV1NmK1e00cxsr9YrE9r7yAChE0VvpuY5Rnlow==}
     dev: true
+
+  /dayjs/1.11.0:
+    resolution: {integrity: sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
