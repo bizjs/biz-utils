@@ -6,6 +6,7 @@ specifiers:
   '@types/jest': ^27.0.3
   '@types/lodash': ^4.14.180
   '@types/lodash.set': ^4.3.6
+  '@types/url-parse': ^1.4.8
   '@umijs/test': ^3.0.5
   antd: ^4.17.3
   cross-env: ^7.0.3
@@ -22,10 +23,12 @@ specifiers:
   react-dom: ^17.0.2
   ts-jest: ^27.1.1
   typescript: ^4.4.4
+  url-parse: ^1.5.10
 
 dependencies:
   dayjs: 1.11.0
   lodash: 4.17.21
+  url-parse: 1.5.10
 
 devDependencies:
   '@testing-library/jest-dom': 5.16.2
@@ -33,6 +36,7 @@ devDependencies:
   '@types/jest': 27.4.1
   '@types/lodash': 4.14.180
   '@types/lodash.set': 4.3.6
+  '@types/url-parse': 1.4.8
   '@umijs/test': 3.5.21
   antd: 4.19.1_react-dom@17.0.2+react@17.0.2
   cross-env: 7.0.3
@@ -3635,6 +3639,10 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: true
+
+  /@types/url-parse/1.4.8:
+    resolution: {integrity: sha512-zqqcGKyNWgTLFBxmaexGUKQyWqeG7HjXj20EuQJSJWwXe54BjX0ihIo5cJB9yAQzH8dNugJ9GvkBYMjPXs/PJw==}
     dev: true
 
   /@types/yargs-parser/21.0.0:
@@ -12649,6 +12657,10 @@ packages:
     deprecated: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
     dev: true
 
+  /querystringify/2.2.0:
+    resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
+    dev: false
+
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
@@ -13758,6 +13770,10 @@ packages:
   /require-main-filename/2.0.0:
     resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
     dev: true
+
+  /requires-port/1.0.0:
+    resolution: {integrity: sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=}
+    dev: false
 
   /resize-observer-polyfill/1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
@@ -15540,6 +15556,13 @@ packages:
     dependencies:
       prepend-http: 2.0.0
     dev: true
+
+  /url-parse/1.5.10:
+    resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
+    dependencies:
+      querystringify: 2.2.0
+      requires-port: 1.0.0
+    dev: false
 
   /url/0.11.0:
     resolution: {integrity: sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=}

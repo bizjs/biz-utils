@@ -22,6 +22,7 @@
     "@types/jest": "^27.0.3",
     "@types/lodash": "^4.14.180",
     "@types/lodash.set": "^4.3.6",
+    "@types/url-parse": "^1.4.8",
     "@umijs/test": "^3.0.5",
     "antd": "^4.17.3",
     "cross-env": "^7.0.3",
@@ -39,6 +40,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "url-parse": "^1.5.10"
   }
 }
