@@ -9,3 +9,6 @@ export function getQuery(search?: string): Record<string, string | undefined> {
   const urlIns = UrlParse(searchStr, true);
   return urlIns.query;
 }
+
+export type DownloadOptions = {};
+export function download(url: string, options: DownloadOptions): void {}
