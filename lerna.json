@@ -1,10 +1,15 @@
 {
-  "packages": ["packages/biz-utils"],
-  "version": "0.0.3",
+  "packages": [
+    "packages/biz-utils"
+  ],
+  "version": "0.0.4",
   "npmClient": "pnpm",
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md", "**/__tests__/**"],
+      "ignoreChanges": [
+        "*.md",
+        "**/__tests__/**"
+      ],
       "message": "chore(release): publish"
     }
   }
