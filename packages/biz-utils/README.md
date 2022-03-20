@@ -6,11 +6,11 @@
 
 ```bash
 # Install
-npm i @hstar/biz-utils -S
+npm i @bizjs/biz-utils -S
 ```
 
 ```ts
-import { getQuery } from '@hstar/biz-utils';
+import { getQuery } from '@bizjs/biz-utils';
 
 // 获取浏览器 URL 的 querystring 并转换为对象
 const query = getQuery();
