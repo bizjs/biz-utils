@@ -1,7 +1,8 @@
-import { formatDate } from '../src';
-import { ArgumentException } from '../src/exceptions';
+import dayjs from 'dayjs';
+import { formatDate, getTDate } from '../src';
+import { ArgumentError } from '../src/errors';
 
-function fillZero(num) {
+function fillZero(num: number): string {
   return `00${num}`.slice(-2);
 }
 
@@ -39,7 +40,30 @@ describe('dateUtils test', () => {
     it('formatDate with no date should throw an error', () => {
       expect(() => {
         (formatDate as any)();
-      }).toThrowError(ArgumentException);
+      }).toThrowError(ArgumentError);
+    });
+  });
+
+  describe('getTDate test', () => {
+    it('getTDate from now ok', () => {
+      expect(getTDate(-10).getDate()).toBe(dayjs().add(-10, 'days').toDate().getDate());
+      expect(getTDate(5).getDate()).toBe(dayjs().add(5, 'days').toDate().getDate());
+    });
+
+    it('getTDate from special date ok', () => {
+      const d = new Date(2022, 2, 20);
+      expect(getTDate(-2, d).getDate()).toBe(18);
+      expect(getTDate(4, d).getDate()).toBe(24);
+    });
+
+    it('getTDate use error args should throw an error', () => {
+      expect(() => {
+        getTDate('' as any);
+      }).toThrowError(ArgumentError);
+
+      expect(() => {
+        expect(getTDate('3' as any, new Date()).getDate()).toBe(23);
+      }).toThrowError(ArgumentError);
     });
   });
 });

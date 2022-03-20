@@ -1,3 +1,3 @@
 // 日期相关函数
-export { formatDate } from './dateUtils';
+export { formatDate, getTDate } from './dateUtils';
 export type {} from './dateUtils';
