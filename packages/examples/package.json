@@ -9,12 +9,13 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@bizjs/biz-utils": "^0.0.2",
+    "@bizjs/biz-utils": "^0.0.3",
     "umi": "^4.0.0-rc.8"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "typescript": "^4.1.2"
-  }
+  },
+  "version": "0.0.3"
 }
