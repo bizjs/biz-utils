@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "start": "dumi dev",
-    "exp":"lerna run exp --stream --scope examples",
+    "exp":"cd packages/examples && pnpm run exp",
     "bootstrap": "pnpm i && lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test --stream",
