@@ -1,11 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@testing-library/jest-dom': ^5.15.1
-  '@testing-library/react': ^12.1.2
   '@types/jest': ^27.0.3
   '@types/lodash': ^4.14.180
-  '@types/lodash.set': ^4.3.6
   '@types/url-parse': ^1.4.8
   '@umijs/test': ^3.0.5
   antd: ^4.17.3
@@ -22,6 +19,7 @@ specifiers:
   prettier: ^2.2.1
   react: ^17.0.2
   react-dom: ^17.0.2
+  rollup-plugin-commonjs: ^10.1.0
   ts-jest: ^27.1.1
   typescript: ^4.4.4
   url-parse: ^1.5.10
@@ -33,11 +31,8 @@ dependencies:
   url-parse: 1.5.10
 
 devDependencies:
-  '@testing-library/jest-dom': 5.16.2
-  '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@types/jest': 27.4.1
   '@types/lodash': 4.14.180
-  '@types/lodash.set': 4.3.6
   '@types/url-parse': 1.4.8
   '@umijs/test': 3.5.21
   antd: 4.19.1_react-dom@17.0.2+react@17.0.2
@@ -51,6 +46,7 @@ devDependencies:
   prettier: 2.5.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  rollup-plugin-commonjs: 10.1.0
   ts-jest: 27.1.3_60149d457e34ffba7d4e845dde6a1263
   typescript: 4.6.2
 
@@ -3333,56 +3329,9 @@ packages:
       defer-to-connect: 1.1.3
     dev: true
 
-  /@testing-library/dom/8.11.3:
-    resolution: {integrity: sha512-9LId28I+lx70wUiZjLvi1DB/WT2zGOxUh46glrSNMaWVx849kKAluezVzZrXJfTKKoQTmEOutLes/bHg4Bj3aA==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@babel/code-frame': 7.16.7
-      '@babel/runtime': 7.17.2
-      '@types/aria-query': 4.2.2
-      aria-query: 5.0.0
-      chalk: 4.1.2
-      dom-accessibility-api: 0.5.13
-      lz-string: 1.4.4
-      pretty-format: 27.5.1
-    dev: true
-
-  /@testing-library/jest-dom/5.16.2:
-    resolution: {integrity: sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==}
-    engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
-    dependencies:
-      '@babel/runtime': 7.17.2
-      '@types/testing-library__jest-dom': 5.14.3
-      aria-query: 5.0.0
-      chalk: 3.0.0
-      css: 3.0.0
-      css.escape: 1.5.1
-      dom-accessibility-api: 0.5.13
-      lodash: 4.17.21
-      redent: 3.0.0
-    dev: true
-
-  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      '@babel/runtime': 7.17.2
-      '@testing-library/dom': 8.11.3
-      '@types/react-dom': 17.0.13
-      react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
-    dev: true
-
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /@types/aria-query/4.2.2:
-    resolution: {integrity: sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==}
     dev: true
 
   /@types/babel__core/7.1.18:
@@ -3479,16 +3428,6 @@ packages:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
 
-  /@types/lodash.set/4.3.6:
-    resolution: {integrity: sha512-ZeGDDlnRYTvS31Laij0RsSaguIUSBTYIlJFKL3vm3T2OAZAQj2YpSvVWJc0WiG4jqg9fGX6PAPGvDqBcHfSgFg==}
-    dependencies:
-      '@types/lodash': 4.14.179
-    dev: true
-
-  /@types/lodash/4.14.179:
-    resolution: {integrity: sha512-uwc1x90yCKqGcIOAT6DwOSuxnrAbpkdPsUOZtwrXb4D/6wZs+6qG7QnIawDuZWg0sWpxl+ltIKCaLoMlna678w==}
-    dev: true
-
   /@types/lodash/4.14.180:
     resolution: {integrity: sha512-XOKXa1KIxtNXgASAnwj7cnttJxS4fksBRywK/9LzRV5YxrF80BXZIGeQSuoESQ/VkUj30Ae0+YcuHc15wJCB2g==}
     dev: true
@@ -3547,12 +3486,6 @@ packages:
     resolution: {integrity: sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==}
     dependencies:
       '@types/react': 16.14.24
-    dev: true
-
-  /@types/react-dom/17.0.13:
-    resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==}
-    dependencies:
-      '@types/react': 17.0.40
     dev: true
 
   /@types/react-router-config/5.0.2:
@@ -3631,12 +3564,6 @@ packages:
 
   /@types/stack-utils/2.0.1:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
-    dev: true
-
-  /@types/testing-library__jest-dom/5.14.3:
-    resolution: {integrity: sha512-oKZe+Mf4ioWlMuzVBaXQ9WDnEm1+umLx0InILg+yvZVBBDmzV5KfZyLrCvadtWcx8+916jLmHafcmqqffl+iIw==}
-    dependencies:
-      '@types/jest': 27.4.1
     dev: true
 
   /@types/unist/2.0.6:
@@ -4441,11 +4368,6 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
-  /aria-query/5.0.0:
-    resolution: {integrity: sha512-V+SM7AbUwJ+EBnB8+DXs0hPZHO0W6pqBcc0dW90OwtVG02PswOu/teuARoLQjdDOH+t9pJgGnW5/Qmouf3gPJg==}
-    engines: {node: '>=6.0'}
-    dev: true
-
   /arr-diff/1.1.0:
     resolution: {integrity: sha1-aHwydYFjWI/vfeezb6vklesaOZo=}
     engines: {node: '>=0.10.0'}
@@ -5204,14 +5126,6 @@ packages:
       supports-color: 5.5.0
     dev: true
 
-  /chalk/3.0.0:
-    resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}
-    engines: {node: '>=8'}
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
-    dev: true
-
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -5943,18 +5857,6 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /css.escape/1.5.1:
-    resolution: {integrity: sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=}
-    dev: true
-
-  /css/3.0.0:
-    resolution: {integrity: sha512-DG9pFfwOrzc+hawpmqX/dHYHJG+Bsdb0klhyi1sDneOgGOXy9wQIC8hzyVp1e4NRYDBdxcylvywPkkXCHAzTyQ==}
-    dependencies:
-      inherits: 2.0.4
-      source-map: 0.6.1
-      source-map-resolve: 0.6.0
-    dev: true
-
   /cssdb/4.4.0:
     resolution: {integrity: sha512-LsTAR1JPEM9TpGhl/0p3nQecC2LJ0kD8X5YARu1hk/9I1gril5vDtMZyNxcEpxxDj34YNck/ucjuoUd66K03oQ==}
     dev: true
@@ -6299,10 +6201,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-type: 4.0.0
-    dev: true
-
-  /dom-accessibility-api/0.5.13:
-    resolution: {integrity: sha512-R305kwb5CcMDIpSHUnLyIAp7SrSPBx6F0VfQFB3M75xVMHhXJJIdePYgbPPh1o57vCHNu5QztokWUPsLjWzFqw==}
     dev: true
 
   /dom-align/1.12.2:
@@ -13918,6 +13816,19 @@ packages:
       inherits: 2.0.4
     dev: true
 
+  /rollup-plugin-commonjs/10.1.0:
+    resolution: {integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==}
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
+    peerDependencies:
+      rollup: '>=1.12.0'
+    dependencies:
+      estree-walker: 0.6.1
+      is-reference: 1.2.1
+      magic-string: 0.25.9
+      resolve: 1.22.0
+      rollup-pluginutils: 2.8.2
+    dev: true
+
   /rollup-plugin-postcss/3.1.8:
     resolution: {integrity: sha512-JHnGfW8quNc6ePxEkZ05HEZ1YiRxDgY9RKEetMfsrwxR2kh/d90OVScTc6b1c2Q17Cs/5TRYL+1uddG21lQe3w==}
     engines: {node: '>=10'}
@@ -14383,14 +14294,6 @@ packages:
       resolve-url: 0.2.1
       source-map-url: 0.4.1
       urix: 0.1.0
-    dev: true
-
-  /source-map-resolve/0.6.0:
-    resolution: {integrity: sha512-KXBr9d/fO/bWo97NXsPIAW1bFSBOuCnjbNTBMO7N59hsv5i9yzRDfcYwwt0l04+VqnKC+EwzvJZIP/qkuMgR/w==}
-    deprecated: See https://github.com/lydell/source-map-resolve#deprecated
-    dependencies:
-      atob: 2.1.2
-      decode-uri-component: 0.2.0
     dev: true
 
   /source-map-support/0.5.21:

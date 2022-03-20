@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { isInteger } from 'lodash';
+import isInteger from 'lodash/isInteger';
 import { ArgumentError } from './errors';
 
 const FormatTemplateMap: Record<string, string> = {
