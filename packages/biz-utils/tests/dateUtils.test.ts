@@ -30,7 +30,7 @@ describe('dateUtils test', () => {
 
     it('formatDate with timestamp ok', () => {
       const source = 1647774523633;
-      const targetStr = '2022-03-20 19:08:43';
+      const targetStr = dayjs(source).format('YYYY-MM-DD HH:mm:ss');
       expect(formatDate(source, 'datetime')).toBe(targetStr);
       expect(formatDate(source, 'date')).toBe(targetStr.split(' ')[0]);
       expect(formatDate(source, 'time')).toBe(targetStr.split(' ')[1]);
