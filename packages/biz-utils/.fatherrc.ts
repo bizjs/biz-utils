@@ -1,7 +1,7 @@
-import commonjs from '@rollup/plugin-commonjs';
+// import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   esm: 'rollup',
   cjs: 'rollup',
-  extraRollupPlugins: [commonjs()],
+  // extraRollupPlugins: [commonjs()],
 };

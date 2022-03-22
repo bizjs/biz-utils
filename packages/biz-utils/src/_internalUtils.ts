@@ -3,7 +3,7 @@ import { OpenUrlOptions, UrlQuery } from './typings/common';
 
 function noop() {}
 
-export function _buildUrl(url: string, options: { query?: UrlQuery }) {
+export function _buildUrl(url: string, options?: { query?: UrlQuery }) {
   const urlIns = new UrlParse(url, true);
   Object.assign(urlIns.query, options?.query);
   return urlIns.toString();
@@ -13,7 +13,7 @@ export function _ensureFunction(fn: unknown) {
   return typeof fn === 'function' ? fn : noop;
 }
 
-export function _openUrl(url: string, options: OpenUrlOptions & { download?: string }) {
+export function _openUrl(url: string, options?: OpenUrlOptions & { download?: string }) {
   const finalUrl = _buildUrl(url, options);
 
   // 模拟 a 标签点击跳转
