@@ -9,9 +9,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run test
-      run: pnpm test
-    - name: Run a multi-line script
+    - name: Install pnpm & init deps
       run: |
-        echo Add other actions to build,
+        npm i -g pnpm
+        pnpm i && pnpm run bootstrap
+    - name: Run Test
+      run: |
+        pnpm test
         echo test, and deploy your project.
