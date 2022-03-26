@@ -1,4 +1,4 @@
-import { _buildUrl, _ensureFunction, _openUrl } from '../src/_internalUtils';
+import { _buildUrl, _ensureFunction, _openUrl, _isString } from '../src/_internalUtils';
 
 describe('_internalUtils test', () => {
   describe('_ensureFunction test', () => {
@@ -20,6 +20,11 @@ describe('_internalUtils test', () => {
 
       fn = _ensureFunction(undefined);
       expect(fn).toBeInstanceOf(Function);
+
+      // 如果本身就是函数，原样返回
+      const fn2 = function () {};
+      fn = _ensureFunction(fn2);
+      expect(fn).toBe(fn2);
     });
   });
 
@@ -50,6 +55,25 @@ describe('_internalUtils test', () => {
     it('_openUrl in current window', () => {
       _openUrl(source);
       // TODO: How to test it?
+    });
+    it('_openUrl in new window', () => {
+      _openUrl(source, { newWindow: true });
+      // TODO: How to test it?
+    });
+    it('_openUrl in new window with download', () => {
+      _openUrl(source, { newWindow: true, download: 'down' });
+      // TODO: How to test it?
+    });
+  });
+
+  describe('_isString test', () => {
+    it('_isString ok', () => {
+      expect(_isString('test')).toBe(true);
+      expect(_isString('')).toBe(true);
+      expect(_isString(1)).toBe(false);
+      expect(_isString(true)).toBe(false);
+      expect(_isString(/\d{1}/)).toBe(false);
+      expect(_isString({})).toBe(false);
     });
   });
 });
