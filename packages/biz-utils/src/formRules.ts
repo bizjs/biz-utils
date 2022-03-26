@@ -1,7 +1,7 @@
-import _isEmail from 'validator/es/lib/isEmail';
+import _isEmail, { IsEmailOptions } from 'validator/es/lib/isEmail';
 import _isMobilePhone from 'validator/es/lib/isMobilePhone';
 import _isIP from 'validator/es/lib/isIP';
-import _isURL from 'validator/es/lib/isURL';
+import _isURL, { IsURLOptions } from 'validator/es/lib/isURL';
 
 const CHINESE_LOCALE_CODE = 'zh-CN';
 
@@ -25,12 +25,13 @@ export function isChineseLandlineNumber(landlineNumber: string): boolean {
   return LANDLINE_REG.test(landlineNumber);
 }
 
+export type { IsEmailOptions };
 /**
  * 是否是邮箱地址
  * @param email
  * @returns
  */
-export function isEmail(email: string): boolean {
+export function isEmail(email: string, options?: IsEmailOptions): boolean {
   return _isEmail(email);
 }
 
@@ -159,6 +160,8 @@ export function isIpV4(ip: string): boolean {
   return _isIP(ip, 4);
 }
 
-export function isURL(url: string): boolean {
-  return _isURL(url);
+export type { IsURLOptions };
+
+export function isURL(url: string, options?: IsURLOptions): boolean {
+  return _isURL(url, Object.assign({ require_protocol: true, disallow_auth: true }, options));
 }
