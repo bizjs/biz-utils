@@ -1,7 +1,9 @@
 import UrlParse from 'url-parse';
 import { saveAs } from 'file-saver';
-import { _buildUrl, _ensureFunction, _openUrl } from './_internalUtils';
+import Clipboard from 'clipboard';
+import { _buildUrl, _ensureFunction, _isString, _openUrl } from './_internalUtils';
 import type { OpenUrlOptions, UrlQuery } from './typings/common';
+import { ArgumentError } from './errors';
 
 /**
  * 将浏览器的 querystring 转换为对象
@@ -92,5 +94,29 @@ export function downloadBlob(url: string, options?: DownloadBlobOptions): Promis
     };
 
     downloadXhr.send();
+  });
+}
+
+export function copyText(content: string): Promise<void> {
+  if (!_isString(content)) {
+    throw new ArgumentError('content must be string.', 'content');
+  }
+  return new Promise((resolve, reject) => {
+    try {
+      const copyBtnEl = document.createElement('button');
+      copyBtnEl.setAttribute('data-clipboard-text', content);
+      const clipboardIns = new Clipboard(copyBtnEl);
+      clipboardIns.on('success', () => {
+        clipboardIns.destroy();
+        resolve();
+      });
+      clipboardIns.on('error', err => {
+        reject(err);
+      });
+      copyBtnEl.click();
+      copyBtnEl?.remove();
+    } catch (ex) {
+      reject(ex);
+    }
   });
 }

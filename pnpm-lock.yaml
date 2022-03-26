@@ -6,8 +6,11 @@ specifiers:
   '@types/jest': ^27.0.3
   '@types/lodash': ^4.14.180
   '@types/url-parse': ^1.4.8
+  '@types/uuid': ^8.3.4
+  '@types/validator': ^13.7.2
   '@umijs/test': ^3.0.5
   antd: ^4.17.3
+  clipboard: ^2.0.10
   cross-env: ^7.0.3
   dumi: ^1.0.17
   father-build: ^1.21.2
@@ -18,8 +21,11 @@ specifiers:
   prettier: ^2.2.1
   react: ^17.0.2
   react-dom: ^17.0.2
+  rollup-plugin-commonjs: ^10.1.0
   ts-jest: ^27.1.1
   typescript: ^4.4.4
+  uuid: ^8.3.2
+  validator: ^13.7.0
 
 devDependencies:
   '@rollup/plugin-commonjs': 21.0.2
@@ -27,8 +33,11 @@ devDependencies:
   '@types/jest': 27.4.1
   '@types/lodash': 4.14.180
   '@types/url-parse': 1.4.8
+  '@types/uuid': 8.3.4
+  '@types/validator': 13.7.2
   '@umijs/test': 3.5.21
   antd: 4.19.1_react-dom@17.0.2+react@17.0.2
+  clipboard: 2.0.10
   cross-env: 7.0.3
   dumi: 1.1.39_aeaba09eb00f7665e5acdd7c57ed6790
   father-build: 1.21.2
@@ -39,8 +48,11 @@ devDependencies:
   prettier: 2.5.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  rollup-plugin-commonjs: 10.1.0
   ts-jest: 27.1.3_60149d457e34ffba7d4e845dde6a1263
   typescript: 4.6.2
+  uuid: 8.3.2
+  validator: 13.7.0
 
 packages:
 
@@ -4297,6 +4309,14 @@ packages:
     resolution: {integrity: sha512-zqqcGKyNWgTLFBxmaexGUKQyWqeG7HjXj20EuQJSJWwXe54BjX0ihIo5cJB9yAQzH8dNugJ9GvkBYMjPXs/PJw==}
     dev: true
 
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+    dev: true
+
+  /@types/validator/13.7.2:
+    resolution: {integrity: sha512-KFcchQ3h0OPQgFirBRPZr5F/sVjxZsOrQHedj3zi8AH3Zv/hOLx2OLR4hxR5HcfoU+33n69ZuOfzthKVdMoTiw==}
+    dev: true
+
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: true
@@ -5988,6 +6008,14 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
+  /clipboard/2.0.10:
+    resolution: {integrity: sha512-cz3m2YVwFz95qSEbCDi2fzLN/epEN9zXBvfgAoGkvGOJZATMl9gtTDVOtBYkx2ODUJl2kvmud7n32sV2BpYR4g==}
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: true
+
   /clipboardy/2.3.0:
     resolution: {integrity: sha512-mKhiIL2DrQIsuXMgBgnfEHOZOryC7kY7YO//TN6c63wlEm3NG5tz+YgY5rVi29KCmq/QQjKYvM7a19+MDOTHOQ==}
     engines: {node: '>=8'}
@@ -6854,6 +6882,10 @@ packages:
   /delayed-stream/1.0.0:
     resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
     engines: {node: '>=0.4.0'}
+    dev: true
+
+  /delegate/3.2.0:
+    resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
     dev: true
 
   /delegates/1.0.0:
@@ -8063,6 +8095,12 @@ packages:
       object-assign: 4.1.1
       pify: 2.3.0
       pinkie-promise: 2.0.1
+    dev: true
+
+  /good-listener/1.2.2:
+    resolution: {integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=}
+    dependencies:
+      delegate: 3.2.0
     dev: true
 
   /got/9.6.0:
@@ -14529,6 +14567,19 @@ packages:
       inherits: 2.0.4
     dev: true
 
+  /rollup-plugin-commonjs/10.1.0:
+    resolution: {integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==}
+    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
+    peerDependencies:
+      rollup: '>=1.12.0'
+    dependencies:
+      estree-walker: 0.6.1
+      is-reference: 1.2.1
+      magic-string: 0.25.9
+      resolve: 1.22.0
+      rollup-pluginutils: 2.8.2
+    dev: true
+
   /rollup-plugin-postcss/3.1.8:
     resolution: {integrity: sha512-JHnGfW8quNc6ePxEkZ05HEZ1YiRxDgY9RKEetMfsrwxR2kh/d90OVScTc6b1c2Q17Cs/5TRYL+1uddG21lQe3w==}
     engines: {node: '>=10'}
@@ -14712,6 +14763,10 @@ packages:
     resolution: {integrity: sha512-hxpAR6AN+Gh53AdAimHM6C8oTN1ppwVZITihix+WqalywBeFcQ6LdQP5ABNl26nX8GTEL7VT+b8lKpdqq65wXg==}
     dependencies:
       compute-scroll-into-view: 1.0.17
+    dev: true
+
+  /select/1.1.2:
+    resolution: {integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=}
     dev: true
 
   /semver-compare/1.0.0:
@@ -15636,6 +15691,10 @@ packages:
     resolution: {integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=}
     dev: true
 
+  /tiny-emitter/2.1.0:
+    resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: true
+
   /tiny-invariant/1.2.0:
     resolution: {integrity: sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==}
     dev: true
@@ -16242,7 +16301,6 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: true
-    optional: true
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
@@ -16277,6 +16335,11 @@ packages:
     resolution: {integrity: sha1-X6kS2B630MdK/BQN5zF/DKffQ34=}
     dependencies:
       builtins: 1.0.3
+    dev: true
+
+  /validator/13.7.0:
+    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+    engines: {node: '>= 0.10'}
     dev: true
 
   /value-equal/1.0.1:

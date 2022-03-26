@@ -33,3 +33,12 @@ export function _openUrl(url: string, options?: OpenUrlOptions & { download?: st
   aEl.click();
   document.body.removeChild(aEl);
 }
+
+/**
+ * 是否是有效字符串
+ * @param str
+ * @returns
+ */
+export function _isString(str: unknown) {
+  return typeof str === 'string';
+}
