@@ -53,6 +53,9 @@ export function safeJSONParse<T extends any = any>(
  * @returns
  */
 export function distinct<T = any>(arr: T[], keyFn: (x: T) => any = x => x): T[] {
+  if (!Array.isArray(arr)) {
+    throw new ArgumentError('arr must be an array.', 'arr');
+  }
   const resultArr: T[] = [];
   const keySet = new Set();
   arr.forEach(item => {
@@ -72,7 +75,7 @@ export function distinct<T = any>(arr: T[], keyFn: (x: T) => any = x => x): T[] 
  */
 export function getExtName(filepath: string, options?: { toLower?: boolean }) {
   if (!_isString(filepath)) {
-    return new ArgumentError('filepath must be string.', 'filepath');
+    throw new ArgumentError('filepath must be string.', 'filepath');
   }
   // 判断是否无扩展名
   if (filepath.indexOf('.') < 0) {
