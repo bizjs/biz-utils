@@ -7,6 +7,7 @@
   "scripts": {
     "start": "dumi dev",
     "exp": "cd packages/examples && pnpm run exp",
+    "exp:init": "cd packages/examples && pnpm i",
     "exp:build": "cd packages/examples && pnpm run build",
     "bootstrap": "pnpm i && lerna bootstrap",
     "build": "lerna run build",

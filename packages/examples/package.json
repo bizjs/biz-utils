@@ -9,7 +9,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@bizjs/biz-utils": "^0.0.3",
+    "@bizjs/biz-utils": "^0.1.0",
     "umi": "^4.0.0-rc.8"
   },
   "devDependencies": {
