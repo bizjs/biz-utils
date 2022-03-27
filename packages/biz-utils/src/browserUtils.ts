@@ -35,7 +35,7 @@ export type DownloadOptions = OpenUrlOptions & {
  * @param options
  * @returns
  */
-export function download(url: string, options: DownloadOptions): void {
+export function download(url: string, options?: DownloadOptions): void {
   const filename = String(options?.filename || 'download');
   const opt = Object.assign({ newWindow: true }, options || {}, { download: filename });
   return _openUrl(url, opt);
