@@ -20,6 +20,8 @@
   "scripts": {
     "build": "father-build",
     "test": "umi-test",
+    "docs": "typedoc src/index.ts --out ../../dist/apis",
+    "tsc": "tsc --noEmit",
     "test:cov": "umi-test --coverage"
   },
   "repository": {
