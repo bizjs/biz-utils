@@ -1,5 +1,5 @@
 {
-  "name": "@bizjs/biz-utils",
+  "name": "@bizjs/biz-utils-node",
   "version": "0.1.0",
   "description": "The biz utils for web develpoment.",
   "keywords": [
@@ -36,9 +36,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@bizjs/biz-utils-common": "workspace:*",
-    "file-saver": "^2.0.5",
-    "url-parse": "^1.5.10",
-    "clipboard": "2.0.11"
+    "@bizjs/biz-utils-common": "workspace:*"
   }
 }

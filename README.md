@@ -28,9 +28,6 @@ const num = numberAdd(0.1, 0.2); // '0.3'
 # 安装依赖
 pnpm i
 
-# 初始化子包依赖以及链接
-pnpm run bootstrap
-
 # Run dev
 pnpm start
 
