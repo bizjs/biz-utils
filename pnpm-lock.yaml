@@ -14,7 +14,6 @@ importers:
       '@types/validator': ^13.7.2
       '@umijs/test': ^3.0.5
       antd: ^4.17.3
-      clipboard: ^2.0.10
       cross-env: ^7.0.3
       dumi: ^1.0.17
       father-build: ^1.21.2
@@ -30,8 +29,6 @@ importers:
       ts-jest: ^27.1.1
       typedoc: ^0.22.15
       typescript: ^4.4.4
-      uuid: ^8.3.2
-      validator: ^13.7.0
     devDependencies:
       '@rollup/plugin-commonjs': 21.0.2
       '@types/file-saver': 2.0.5
@@ -43,7 +40,6 @@ importers:
       '@types/validator': 13.7.2
       '@umijs/test': 3.5.21
       antd: 4.19.1_sfoxds7t5ydpegc3knd667wn6m
-      clipboard: 2.0.10
       cross-env: 7.0.3
       dumi: 1.1.39_v2v2bhvqb53glznm3v6fp3lhsa
       father-build: 1.21.2
@@ -59,8 +55,6 @@ importers:
       ts-jest: 27.1.3_makj2rl6gt73u7koqro542qsmm
       typedoc: 0.22.15_typescript@4.6.2
       typescript: 4.6.2
-      uuid: 8.3.2
-      validator: 13.7.0
 
   packages/biz-utils:
     specifiers:
@@ -80,11 +74,15 @@ importers:
       decimal.js: ^10.3.1
       lodash: ^4.17.21
       url-parse: ^1.5.10
+      uuid: ^3
+      validator: ^13.7.0
     dependencies:
       dayjs: 1.11.5
       decimal.js: 10.3.1
       lodash: 4.17.21
       url-parse: 1.5.10
+      uuid: 3.4.0
+      validator: 13.7.0
 
   packages/biz-utils-node:
     specifiers:
@@ -6393,14 +6391,6 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /clipboard/2.0.10:
-    resolution: {integrity: sha512-cz3m2YVwFz95qSEbCDi2fzLN/epEN9zXBvfgAoGkvGOJZATMl9gtTDVOtBYkx2ODUJl2kvmud7n32sV2BpYR4g==}
-    dependencies:
-      good-listener: 1.2.2
-      select: 1.1.2
-      tiny-emitter: 2.1.0
-    dev: true
-
   /clipboard/2.0.11:
     resolution: {integrity: sha512-C+0bbOqkezLIsmWSvlsXS0Q0bmkugu7jcfMIACB+RDEntIzQIkdr148we28AfSloQLRdZlYL/QYyrq05j/3Faw==}
     dependencies:
@@ -7316,6 +7306,7 @@ packages:
 
   /delegate/3.2.0:
     resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
+    dev: false
 
   /delegates/1.0.0:
     resolution: {integrity: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=}
@@ -8653,6 +8644,7 @@ packages:
     resolution: {integrity: sha512-goW1b+d9q/HIwbVYZzZ6SsTr4IgE+WA44A0GmPIQstuOrgsFcT7VEJ48nmr9GaRtNu0XTKacFLGnBPAM6Afouw==}
     dependencies:
       delegate: 3.2.0
+    dev: false
 
   /got/9.6.0:
     resolution: {integrity: sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==}
@@ -15478,6 +15470,7 @@ packages:
 
   /select/1.1.2:
     resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==}
+    dev: false
 
   /semver-compare/1.0.0:
     resolution: {integrity: sha1-De4hahyUGrN+nvsXiPavxf9VN/w=}
@@ -16419,6 +16412,7 @@ packages:
 
   /tiny-emitter/2.1.0:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: false
 
   /tiny-invariant/1.2.0:
     resolution: {integrity: sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==}
@@ -17056,7 +17050,6 @@ packages:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
     deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     hasBin: true
-    dev: true
 
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
@@ -17108,7 +17101,7 @@ packages:
   /validator/13.7.0:
     resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
     engines: {node: '>= 0.10'}
-    dev: true
+    dev: false
 
   /value-equal/1.0.1:
     resolution: {integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==}

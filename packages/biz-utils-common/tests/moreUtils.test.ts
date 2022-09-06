@@ -1,16 +1,14 @@
 import { distinct, generateUniqueId, generateUuid, getExtName, safeJSONParse } from '../src';
-import { validate } from 'uuid';
 import { ArgumentError } from '../src/errors';
 
 describe('moreUtils test', () => {
   describe('generateUuid test', () => {
     it('generateUuid should return an uuid', () => {
       let uuid = generateUuid(); // 如：48ad56d8-2608-4a39-ae63-bb7d260dee57
+      console.log(uuid);
       expect(uuid).toHaveLength(36);
       // 一共有四根中横线
       expect(uuid.match(/\-/g)).toHaveLength(4);
-      // 是 UUID
-      expect(validate(uuid)).toBe(true);
       // 符合特定正则
       const UUID_REG = /^[0-9a-z]{8}(-[0-9a-z]{4}){3}-[0-9a-z]{12}$/;
       expect(UUID_REG.test(uuid)).toBe(true);

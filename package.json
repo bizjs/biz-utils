@@ -33,7 +33,6 @@
     "@types/validator": "^13.7.2",
     "@umijs/test": "^3.0.5",
     "antd": "^4.17.3",
-    "clipboard": "^2.0.10",
     "cross-env": "^7.0.3",
     "dumi": "^1.0.17",
     "father-build": "^1.21.2",
@@ -48,8 +47,6 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "ts-jest": "^27.1.1",
     "typedoc": "^0.22.15",
-    "typescript": "^4.4.4",
-    "uuid": "^8.3.2",
-    "validator": "^13.7.0"
+    "typescript": "^4.4.4"
   }
 }
