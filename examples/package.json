@@ -4,7 +4,8 @@
   "scripts": {
     "exp": "pnpm run dev",
     "dev": "umi dev",
-    "build": "cross-env ANALYZE=1 umi build",
+    "build:analyze": "cross-env ANALYZE=1 umi build",
+    "build": "umi build",
     "postinstall": "umi setup",
     "start": "npm run dev"
   },
