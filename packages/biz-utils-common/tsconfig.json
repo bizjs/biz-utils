@@ -2,6 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "declaration": true,
+    "moduleResolution": "Node",
     "skipLibCheck": true,
     "lib": ["ESNext"],
     "target": "ES2018",

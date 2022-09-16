@@ -21,7 +21,7 @@
     "dev": "father dev",
     "build": "father build",
     "build:deps": "father prebundle",
-    "prepublishOnly": "father doctor && npm run build",
+    "prepublishOnly2": "father doctor && npm run build",
     "test": "jest",
     "docs": "typedoc src/index.ts --out ../../dist/apis",
     "tsc": "tsc --noEmit",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/bizjs/biz-utils/issues"
   },
-  "gitHead": "7e5059eab1c052f3b5939bf8f852e4e4f0e57f5e",
+  "gitHead": "aa564e49f8e8245c48e8fe0aba611c61052c2823",
   "publishConfig": {
     "access": "public"
   },

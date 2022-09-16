@@ -3,6 +3,7 @@
     "strict": true,
     "declaration": true,
     "skipLibCheck": true,
+    "moduleResolution": "Node",
     "lib": ["ESNext"],
     "target": "ES2018",
     "esModuleInterop": true,
