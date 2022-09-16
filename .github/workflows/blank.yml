@@ -15,5 +15,6 @@ jobs:
         pnpm i
     - name: Run Test
       run: |
+        pnpm build
         pnpm test
         echo test, and deploy your project.
