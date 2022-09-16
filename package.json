@@ -1,9 +1,6 @@
 {
   "name": "root",
   "version": "0.0.0",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "start": "dumi dev",
     "exp": "cd packages/examples && pnpm run exp",
