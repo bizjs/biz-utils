@@ -12,6 +12,9 @@
     "test": "lerna run test --stream",
     "test:cov": "lerna run test:cov --stream",
     "pub": "npm run build && lerna publish",
+    "c:init": "changeset init",
+    "c:version": "changeset version",
+    "c:publish": "changeset publish",
     "tsc": "lerna run tsc --stream",
     "analyze": "cross-env ANALYZE=1 dumi build",
     "docs:build": "dumi build && node ./scripts/add_base.js",
@@ -20,6 +23,7 @@
     "pub:doc": "npm run docs:build && npm run docs:apis && npm run docs:deploy"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.24.4",
     "@rollup/plugin-commonjs": "^21.0.2",
     "@types/file-saver": "^2.0.5",
     "@types/jest": "^27.0.3",
