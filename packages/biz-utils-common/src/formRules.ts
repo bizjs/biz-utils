@@ -1,7 +1,7 @@
-import _isEmail, { IsEmailOptions } from 'validator/es/lib/isEmail';
-import _isMobilePhone from 'validator/es/lib/isMobilePhone';
-import _isIP from 'validator/es/lib/isIP';
-import _isURL, { IsURLOptions } from 'validator/es/lib/isURL';
+import _isEmail, { IsEmailOptions } from 'validator/lib/isEmail';
+import _isMobilePhone from 'validator/lib/isMobilePhone';
+import _isIP from 'validator/lib/isIP';
+import _isURL, { IsURLOptions } from 'validator/lib/isURL';
 
 const CHINESE_LOCALE_CODE = 'zh-CN';
 

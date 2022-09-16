@@ -5,7 +5,6 @@ describe('moreUtils test', () => {
   describe('generateUuid test', () => {
     it('generateUuid should return an uuid', () => {
       let uuid = generateUuid(); // 如：48ad56d8-2608-4a39-ae63-bb7d260dee57
-      console.log(uuid);
       expect(uuid).toHaveLength(36);
       // 一共有四根中横线
       expect(uuid.match(/\-/g)).toHaveLength(4);

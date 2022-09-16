@@ -1,7 +1,7 @@
 {
   "name": "@bizjs/biz-utils-common",
   "version": "0.3.1",
-  "description": "The biz utils for web develpoment.",
+  "description": "The common biz utils.",
   "keywords": [
     "biz",
     "utils"
@@ -9,20 +9,23 @@
   "author": "hstarorg <hm910705@163.com>",
   "homepage": "https://github.com/bizjs/biz-utils#readme",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "module": "dist/esm/index.js",
   "sideEffects": false,
   "files": [
     "dist",
-    "!dist/__tests__"
+    "compiled"
   ],
   "scripts": {
-    "build": "father-build",
-    "test": "umi-test",
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "test": "jest",
     "docs": "typedoc src/index.ts --out ../../dist/apis",
     "tsc": "tsc --noEmit",
-    "test:cov": "umi-test --coverage"
+    "test:cov": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -42,5 +45,8 @@
     "url-parse": "^1.5.10",
     "uuid": "^3",
     "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/url-parse": "^1.4.8"
   }
 }

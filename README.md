@@ -20,7 +20,7 @@ const query = getQuery();
 const num = numberAdd(0.1, 0.2); // '0.3'
 ```
 
-## 如何开始
+## 如何研发
 
 > 推荐使用 `pnpm` 作为包管理工具
 

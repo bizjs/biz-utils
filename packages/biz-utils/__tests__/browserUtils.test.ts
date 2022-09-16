@@ -57,7 +57,7 @@ describe('browserUtils test', () => {
     it('copyText failed', async () => {
       // 有一个断言
       expect.assertions(1);
-      document.execCommand = null;
+      document.execCommand = null as any;
       try {
         // 只要传空字符串或则选择文本失败，就会抛出错误
         await copyText('');
@@ -70,7 +70,7 @@ describe('browserUtils test', () => {
     it('copyText called failed', async () => {
       // 有一个断言
       expect.assertions(1);
-      document.createElement = null;
+      document.createElement = null as any;
       try {
         // 只要传空字符串或则选择文本失败，就会抛出错误
         await copyText('Hello');
