@@ -39,6 +39,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@bizjs/biz-utils-common": "workspace:*"
+    "@bizjs/biz-utils-common": "^0.3.3"
   }
 }
