@@ -1,6 +1,6 @@
 {
   "name": "@bizjs/biz-utils-node",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "The biz utils for web develpoment.",
   "keywords": [
     "biz",
@@ -39,6 +39,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@bizjs/biz-utils-common": "^0.3.3"
+    "@bizjs/biz-utils-common": "^0.3.5"
   }
 }
