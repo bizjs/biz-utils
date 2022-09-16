@@ -12,7 +12,7 @@ jobs:
     - name: Install pnpm & init deps
       run: |
         npm i -g pnpm
-        pnpm i && pnpm run bootstrap
+        pnpm i
     - name: Run Test
       run: |
         pnpm test
