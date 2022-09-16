@@ -1,4 +1,4 @@
-import { _buildUrl, _ensureFunction, _openUrl, _isString } from '../src/_internalUtils';
+import { _ensureFunction, _isString } from '../src/_internalUtils';
 
 describe('_internalUtils test', () => {
   describe('_ensureFunction test', () => {
@@ -25,44 +25,6 @@ describe('_internalUtils test', () => {
       const fn2 = function () {};
       fn = _ensureFunction(fn2);
       expect(fn).toBe(fn2);
-    });
-  });
-
-  describe('_buildUrl test', () => {
-    const source = 'https://www.hstar.vip/';
-    it('_buildUrl with no query', () => {
-      let url = _buildUrl(source);
-      expect(url).toBe(source);
-
-      url = _buildUrl(source, { query: {} });
-      expect(url).toBe(source);
-
-      url = _buildUrl(source, { query: null });
-      expect(url).toBe(source);
-    });
-
-    it('_buildUrl with query', () => {
-      let url = _buildUrl(source, { query: { a: '1' } });
-      expect(url).toBe(source + '?a=1');
-
-      url = _buildUrl(source, { query: { a: 'a', b: undefined } });
-      expect(url).toBe(source + '?a=a&b=');
-    });
-  });
-
-  describe('_openUrl test', () => {
-    const source = 'https://www.hstar.vip/';
-    it('_openUrl in current window', () => {
-      _openUrl(source);
-      // TODO: How to test it?
-    });
-    it('_openUrl in new window', () => {
-      _openUrl(source, { newWindow: true });
-      // TODO: How to test it?
-    });
-    it('_openUrl in new window with download', () => {
-      _openUrl(source, { newWindow: true, download: 'down' });
-      // TODO: How to test it?
     });
   });
 

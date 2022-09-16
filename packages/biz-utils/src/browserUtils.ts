@@ -1,9 +1,9 @@
-import UrlParse from 'url-parse';
 import { saveAs } from 'file-saver';
 import Clipboard from 'clipboard';
-import { _buildUrl, _ensureFunction, _isString, _openUrl } from './_internalUtils';
+import { _ensureFunction, _isString, _openUrl } from './_internalUtils';
 import type { OpenUrlOptions, UrlQuery } from './typings/common';
 import { ArgumentError } from './errors';
+import { parseQuery, updateUrl } from '@bizjs/biz-utils-common';
 
 /**
  * 将浏览器的 querystring 转换为对象
@@ -11,8 +11,7 @@ import { ArgumentError } from './errors';
  */
 export function getQuery(search?: string): Record<string, string | undefined> {
   const searchStr = search === void 0 ? location.search : search;
-  const urlIns = UrlParse(searchStr, true);
-  return urlIns.query;
+  return parseQuery(searchStr);
 }
 
 export type { OpenUrlOptions };
@@ -58,7 +57,7 @@ export type DownloadBlobOptions = {
  */
 export function downloadBlob(url: string, options?: DownloadBlobOptions): Promise<boolean> {
   const opt = Object.assign({ filename: 'download' }, options || {});
-  const finalUrl = _buildUrl(url, { query: options?.query });
+  const finalUrl = updateUrl(url, { query: options?.query });
 
   return new Promise((resolve, reject) => {
     // 构造 xhr

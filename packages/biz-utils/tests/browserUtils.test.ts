@@ -25,7 +25,7 @@ describe('browserUtils test', () => {
       let serach = '?u=123';
       expect(getQuery(serach).u).toBe('123');
 
-      serach = 'https://github.com/hstarorg?tab=stars';
+      serach = 'tab=stars';
       expect(getQuery(serach).tab).toBe('stars');
 
       serach = '?';

@@ -21,7 +21,11 @@ export {
   numberDiv,
   numberMul,
   numberSub,
+  // URL 相关
+  parseQuery,
+  stringifyQuery,
+  updateUrl,
 } from '@bizjs/biz-utils-common';
 
 // 导出相关类型
-export type { IsEmailOptions, IsURLOptions } from '@bizjs/biz-utils-common';
+export type { IsEmailOptions, IsURLOptions, UrlPartValues, UrlQuery } from '@bizjs/biz-utils-common';

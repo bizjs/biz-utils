@@ -29,5 +29,4 @@ const query = getQuery();
 "decimal.js": "^10.3.1",
 "file-saver": "^2.0.5",
 "lodash": "^4.17.21",
-"url-parse": "^1.5.10"
 ```

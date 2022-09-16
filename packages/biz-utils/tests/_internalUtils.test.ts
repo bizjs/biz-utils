@@ -1,4 +1,4 @@
-import { _buildUrl, _ensureFunction, _openUrl, _isString } from '../src/_internalUtils';
+import { _ensureFunction, _openUrl, _isString } from '../src/_internalUtils';
 
 describe('_internalUtils test', () => {
   describe('_ensureFunction test', () => {
@@ -25,28 +25,6 @@ describe('_internalUtils test', () => {
       const fn2 = function () {};
       fn = _ensureFunction(fn2);
       expect(fn).toBe(fn2);
-    });
-  });
-
-  describe('_buildUrl test', () => {
-    const source = 'https://www.hstar.vip/';
-    it('_buildUrl with no query', () => {
-      let url = _buildUrl(source);
-      expect(url).toBe(source);
-
-      url = _buildUrl(source, { query: {} });
-      expect(url).toBe(source);
-
-      url = _buildUrl(source, { query: null });
-      expect(url).toBe(source);
-    });
-
-    it('_buildUrl with query', () => {
-      let url = _buildUrl(source, { query: { a: '1' } });
-      expect(url).toBe(source + '?a=1');
-
-      url = _buildUrl(source, { query: { a: 'a', b: undefined } });
-      expect(url).toBe(source + '?a=a&b=');
     });
   });
 

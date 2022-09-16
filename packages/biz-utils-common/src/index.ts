@@ -10,3 +10,9 @@ export { distinct, generateUniqueId, generateUuid, getExtName, safeJSONParse } f
 
 // 数值相关业务工具函数
 export { numberAdd, numberDiv, numberMul, numberSub } from './numeralUtils';
+
+// URL 相关的工具函数
+export { parseQuery, stringifyQuery, updateUrl } from './utlUtils';
+
+// 通用的类型导出
+export { UrlPartValues, UrlQuery } from './typings/lib.type';

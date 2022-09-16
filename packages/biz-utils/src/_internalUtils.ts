@@ -1,20 +1,14 @@
-import UrlParse from 'url-parse';
-import { OpenUrlOptions, UrlQuery } from './typings/common';
+import { updateUrl } from '@bizjs/biz-utils-common';
+import { OpenUrlOptions } from './typings/common';
 
 function noop() {}
-
-export function _buildUrl(url: string, options?: { query?: UrlQuery }) {
-  const urlIns = new UrlParse(url, true);
-  Object.assign(urlIns.query, options?.query);
-  return urlIns.toString();
-}
 
 export function _ensureFunction(fn: unknown) {
   return typeof fn === 'function' ? fn : noop;
 }
 
 export function _openUrl(url: string, options?: OpenUrlOptions & { download?: string }) {
-  const finalUrl = _buildUrl(url, options);
+  const finalUrl = updateUrl(url, { query: options?.query || {} });
 
   // 模拟 a 标签点击跳转
   const aEl = document.createElement('a');
