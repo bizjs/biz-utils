@@ -119,3 +119,29 @@ export function copyText(content: string): Promise<void> {
     }
   });
 }
+
+export type ImageSizeOptions = {
+  width: number;
+  height: number;
+  image: HTMLImageElement
+}
+
+export function getImageSize(imgUrl: string): Promise<ImageSizeOptions> {
+  return new Promise((resolve, reject) => {
+    var image = new Image();
+    image.src = imgUrl;
+
+    image.onload = function(){
+      resolve({
+        width: image.width,
+        height: image.height,
+        image
+      })
+    };
+
+    image.onerror = function () {
+      reject()
+    }
+  })
+
+}
