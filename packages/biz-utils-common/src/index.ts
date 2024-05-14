@@ -15,4 +15,4 @@ export { numberAdd, numberDiv, numberMul, numberSub } from './numeralUtils';
 export { parseQuery, stringifyQuery, updateUrl } from './utlUtils';
 
 // 通用的类型导出
-export { UrlPartValues, UrlQuery } from './typings/lib.type';
+export type { UrlPartValues, UrlQuery } from './typings/lib.type';
