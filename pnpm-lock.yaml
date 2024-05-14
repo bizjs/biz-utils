@@ -9,49 +9,49 @@ importers:
   .:
     devDependencies:
       '@types/file-saver':
-        specifier: ^2.0.5
+        specifier: ^2.0.7
         version: 2.0.7
       '@types/jest':
-        specifier: ^29.0.3
+        specifier: ^29.5.12
         version: 29.5.12
       '@types/lodash':
-        specifier: ^4.14.180
+        specifier: ^4.17.1
         version: 4.17.1
       '@types/react':
-        specifier: ^18.0.9
+        specifier: ^18.3.2
         version: 18.3.2
       '@types/uuid':
         specifier: ^8.3.4
         version: 8.3.4
       '@types/validator':
-        specifier: ^13.7.2
+        specifier: ^13.11.10
         version: 13.11.10
       antd:
-        specifier: ^4.17.3
+        specifier: ^4.24.16
         version: 4.24.16(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
       father:
-        specifier: ^4.0.5
+        specifier: ^4.4.1
         version: 4.4.1(@babel/core@7.24.5)(@types/node@20.12.12)(styled-components@6.1.11(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(type-fest@0.21.3)(webpack@5.91.0)
       fs-extra:
         specifier: ^10.1.0
         version: 10.1.0
       gh-pages:
-        specifier: ^3.0.0
+        specifier: ^3.2.3
         version: 3.2.3
       jest:
-        specifier: ^29.0.3
+        specifier: ^29.7.0
         version: 29.7.0(@types/node@20.12.12)
       jest-environment-jsdom:
-        specifier: ^29.0.3
+        specifier: ^29.7.0
         version: 29.7.0
       lerna:
-        specifier: ^5.5.0
+        specifier: ^5.6.2
         version: 5.6.2(encoding@0.1.13)
       lint-staged:
-        specifier: ^10.0.7
+        specifier: ^10.5.4
         version: 10.5.4
       react:
         specifier: ^17.0.2
@@ -60,13 +60,13 @@ importers:
         specifier: ^17.0.2
         version: 17.0.2(react@17.0.2)
       ts-jest:
-        specifier: ^29.0.1
+        specifier: ^29.1.2
         version: 29.1.2(@babel/core@7.24.5)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.24.5))(jest@29.7.0(@types/node@20.12.12))(typescript@4.9.5)
       typedoc:
-        specifier: ^0.22.15
+        specifier: ^0.22.18
         version: 0.22.18(typescript@4.9.5)
       typescript:
-        specifier: ^4.8.3
+        specifier: ^4.9.5
         version: 4.9.5
 
   packages/biz-utils:
@@ -84,10 +84,10 @@ importers:
   packages/biz-utils-common:
     dependencies:
       dayjs:
-        specifier: ^1.11.0
+        specifier: ^1.11.11
         version: 1.11.11
       decimal.js:
-        specifier: ^10.3.1
+        specifier: ^10.4.3
         version: 10.4.3
       lodash:
         specifier: ^4.17.21
@@ -96,14 +96,14 @@ importers:
         specifier: ^1.5.10
         version: 1.5.10
       uuid:
-        specifier: ^3
+        specifier: ^3.4.0
         version: 3.4.0
       validator:
-        specifier: ^13.7.0
+        specifier: ^13.12.0
         version: 13.12.0
     devDependencies:
       '@types/url-parse':
-        specifier: ^1.4.8
+        specifier: ^1.4.11
         version: 1.4.11
 
   packages/biz-utils-node:

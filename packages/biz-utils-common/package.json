@@ -39,14 +39,14 @@
     "access": "public"
   },
   "dependencies": {
-    "dayjs": "^1.11.0",
-    "decimal.js": "^10.3.1",
+    "dayjs": "^1.11.11",
+    "decimal.js": "^10.4.3",
     "lodash": "^4.17.21",
     "url-parse": "^1.5.10",
-    "uuid": "^3",
-    "validator": "^13.7.0"
+    "uuid": "^3.4.0",
+    "validator": "^13.12.0"
   },
   "devDependencies": {
-    "@types/url-parse": "^1.4.8"
+    "@types/url-parse": "^1.4.11"
   }
 }
