@@ -1,5 +1,7 @@
 import Decimal from 'decimal.js';
-Decimal.set({ precision: 50 });
+Decimal.set({ precision: 50, toExpPos: 1e9, toExpNeg: -1e9 });
+
+// BigNumber.config({ DECIMAL_PLACES: 50, EXPONENTIAL_AT: 1e9 });
 
 /**
  * 精确的数值加法

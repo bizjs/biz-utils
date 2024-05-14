@@ -32,6 +32,13 @@ describe('numeralUtils test', () => {
     it('mul many times', () => {
       expect(numberMul(0.1, 2, 5, '33')).toBe('33');
     });
+
+    it('mul big number', () => {
+      expect(numberMul(10, 1000000, 1000000000000, 1000, 100000, 1000, 100)).toBe('100000000000000000000000000000000');
+      expect(numberMul(10, 1000000, -1000000000000, 1000, 100000, 1000, 100)).toBe(
+        '-100000000000000000000000000000000',
+      );
+    });
   });
 
   describe('numberDiv test', () => {
