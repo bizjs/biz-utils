@@ -1,11 +1,16 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "npmClient": "pnpm",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md", "**/__tests__/**"],
+      "ignoreChanges": [
+        "*.md",
+        "**/__tests__/**"
+      ],
       "message": "chore(release): publish"
     }
   }
