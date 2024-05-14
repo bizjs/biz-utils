@@ -75,13 +75,13 @@ importers:
   packages/biz-utils:
     dependencies:
       '@bizjs/biz-utils-common':
-        specifier: ^0.3.5
-        version: 0.3.5
+        specifier: workspace:*
+        version: link:../biz-utils-common
       clipboard:
         specifier: 2.0.11
         version: 2.0.11
       file-saver:
-        specifier: ^2.0.5
+        specifier: 2.0.5
         version: 2.0.5
 
   packages/biz-utils-common:
@@ -112,8 +112,8 @@ importers:
   packages/biz-utils-node:
     dependencies:
       '@bizjs/biz-utils-common':
-        specifier: ^0.3.5
-        version: 0.3.5
+        specifier: workspace:*
+        version: link:../biz-utils-common
 
 packages:
 
@@ -358,9 +358,6 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
-
-  '@bizjs/biz-utils-common@0.3.5':
-    resolution: {integrity: sha512-e0kOgp8hXp43kVPXXF3fMMbkX0EkZee1Kj8hzCbME6BYr5Bm19OjprwTYtgW9yXS2pCr/8hJXT0Dm0Dy2r5vKg==}
 
   '@bloomberg/record-tuple-polyfill@0.0.4':
     resolution: {integrity: sha512-h0OYmPR3A5Dfbetra/GzxBAzQk8sH7LhRkRUTdagX6nrtlUgJGYCTv4bBK33jsTQw9HDd8PE2x1Ma+iRKEDUsw==}
@@ -8934,15 +8931,6 @@ snapshots:
       to-fast-properties: 2.0.0
 
   '@bcoe/v8-coverage@0.2.3': {}
-
-  '@bizjs/biz-utils-common@0.3.5':
-    dependencies:
-      dayjs: 1.11.11
-      decimal.js: 10.4.3
-      lodash: 4.17.21
-      url-parse: 1.5.10
-      uuid: 3.4.0
-      validator: 13.12.0
 
   '@bloomberg/record-tuple-polyfill@0.0.4': {}
 
