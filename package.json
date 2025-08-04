@@ -1,6 +1,6 @@
 {
   "name": "biz-utils",
-  "version": "0.0.0",
+  "version": "0.3.8",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -17,9 +17,11 @@
     "docs:release": "npm run docs:apis && npm run docs:build && npm run docs:pages",
     "docs:dev": "vitepress dev docs",
     "docs:preview": "vitepress preview docs",
-    "docs:build": "vitepress build docs"
+    "docs:build": "vitepress build docs",
+    "cs": "changeset"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.5",
     "@types/file-saver": "^2.0.7",
     "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.1",
