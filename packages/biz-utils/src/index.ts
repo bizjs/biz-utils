@@ -11,7 +11,6 @@ export {
   isIpV6,
   isURL,
   // 业务工具函数
-  distinct,
   generateUniqueId,
   generateUuid,
   getExtName,
@@ -25,6 +24,11 @@ export {
   parseQuery,
   stringifyQuery,
   updateUrl,
+
+  // 集合相关
+  distinct,
+  arr2obj,
+  splitIntoGroups,
 } from '@bizjs/biz-utils-common';
 
 // 导出相关类型

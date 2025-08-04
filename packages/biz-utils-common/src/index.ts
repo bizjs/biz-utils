@@ -6,13 +6,16 @@ export { isChineseLandlineNumber, isChinesePhoneNumber, isEmail, isIdCardNo, isI
 export type { IsEmailOptions, IsURLOptions } from './formRules';
 
 // 暂未明确分类的业务工具函数
-export { distinct, generateUniqueId, generateUuid, getExtName, safeJSONParse } from './moreUtils';
+export { generateUniqueId, generateUuid, getExtName, safeJSONParse } from './moreUtils';
+
+// 集合相关的工具函数
+export { distinct, arr2obj, splitIntoGroups } from './collection-utils';
 
 // 数值相关业务工具函数
 export { numberAdd, numberDiv, numberMul, numberSub } from './numeralUtils';
 
 // URL 相关的工具函数
-export { parseQuery, stringifyQuery, updateUrl } from './utlUtils';
+export { parseQuery, stringifyQuery, updateUrl } from './urlUtils';
 
 // 通用的类型导出
 export type { UrlPartValues, UrlQuery } from './typings/lib.type';
