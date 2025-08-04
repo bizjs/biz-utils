@@ -29,7 +29,7 @@ const num = numberAdd(0.1, 0.2); // '0.3'
 pnpm i
 
 # Run dev
-pnpm start
+pnpm dev
 
 # 单元测试
 pnpm test
@@ -38,7 +38,7 @@ pnpm test
 pnpm run pub
 
 # 发布文档（推送到 gh-pages）
-pnpm run pub:doc
+pnpm docs:release
 ```
 
 ## Lerna 使用

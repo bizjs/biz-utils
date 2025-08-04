@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "DOM"],
+    "target": "esnext",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "types": ["jest"],
+    "paths": {
+      "@bizjs/biz-utils": ["packages/biz-utils/src/index"]
+    }
+  },
+  "exclude": ["examples"]
+}

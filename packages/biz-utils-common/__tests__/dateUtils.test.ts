@@ -40,7 +40,7 @@ describe('dateUtils test', () => {
     it('formatDate with no date should throw an error', () => {
       expect(() => {
         (formatDate as any)();
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 
@@ -59,11 +59,11 @@ describe('dateUtils test', () => {
     it('getTDate use error args should throw an error', () => {
       expect(() => {
         getTDate('' as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
 
       expect(() => {
         expect(getTDate('3' as any, new Date()).getDate()).toBe(23);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 });

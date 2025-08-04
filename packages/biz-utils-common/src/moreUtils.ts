@@ -47,29 +47,6 @@ export function safeJSONParse<T extends any = any>(
 }
 
 /**
- * 数组去重
- * @param arr
- * @param keyFn
- * @returns
- */
-export function distinct<T = any>(arr: T[], keyFn: (x: T) => any = x => x): T[] {
-  if (!Array.isArray(arr)) {
-    throw new ArgumentError('arr must be an array.', 'arr');
-  }
-  const resultArr: T[] = [];
-  const keySet = new Set();
-  arr.forEach(item => {
-    const key = keyFn(item);
-    if (keySet.has(key)) {
-      return;
-    }
-    keySet.add(key);
-    resultArr.push(item);
-  });
-  return resultArr;
-}
-
-/**
  * 获取扩展名
  * @param filepath
  */

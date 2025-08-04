@@ -23,7 +23,7 @@
     "build:deps": "father prebundle",
     "prepublishOnly2": "father doctor && npm run build",
     "test": "jest",
-    "docs": "typedoc src/index.ts --out ../../dist/apis",
+    "docs": "typedoc --options ../../typedoc.json src/index.ts --out ../../docs/apis",
     "tsc": "tsc --noEmit",
     "test:cov": "jest --coverage"
   },
