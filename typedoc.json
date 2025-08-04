@@ -4,6 +4,8 @@
     "packages/biz-utils-node/src/index.ts",
     "packages/biz-utils-common/src/index.ts"
   ],
+  "entryPointStrategy": "expand",
+  "cleanOutputDir": true,
   "plugin": ["typedoc-plugin-markdown"],
   "out": "docs/apis",
   "excludePrivate": true,

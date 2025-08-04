@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/modules/browser-utils' },
-      { text: 'APIs', link: '/apis/globals' },
+      { text: 'APIs', link: '/apis/modules' },
     ],
 
     sidebar: {

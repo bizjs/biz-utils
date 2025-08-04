@@ -12,7 +12,7 @@ hero:
       link: /docs/browser-utils
     - theme: alt
       text: APIs
-      link: /apis/globals
+      link: /apis/modules
 
 features:
   - title: 始于业务
