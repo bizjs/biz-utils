@@ -41,11 +41,11 @@ describe('moreUtils test', () => {
     it('generateUniqueId argument error', () => {
       expect(() => {
         generateUniqueId(7);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
 
       expect(() => {
         generateUniqueId(33);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 
@@ -81,7 +81,7 @@ describe('moreUtils test', () => {
     it('safeJSONParse with argument error', () => {
       expect(() => {
         safeJSONParse({} as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 
@@ -107,15 +107,15 @@ describe('moreUtils test', () => {
     it('distinct with argument error', () => {
       expect(() => {
         distinct({} as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
 
       expect(() => {
         distinct(1 as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
 
       expect(() => {
         distinct('1' as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 
@@ -141,11 +141,11 @@ describe('moreUtils test', () => {
     it('getExtName with argument error', () => {
       expect(() => {
         getExtName({} as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
 
       expect(() => {
         getExtName(1 as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
   });
 });

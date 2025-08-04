@@ -44,14 +44,14 @@ describe('browserUtils test', () => {
 
     it('copyText ok', async () => {
       await copyText('Hello');
-      expect(document.execCommand).toBeCalledTimes(1);
+      expect(document.execCommand).toHaveBeenCalledTimes(1);
       expect(document.execCommand).toHaveBeenCalledWith('copy');
     });
 
     it('copyText argument error', async () => {
       expect(() => {
         copyText({} as any);
-      }).toThrowError(ArgumentError);
+      }).toThrow(ArgumentError);
     });
 
     it('copyText failed', async () => {
