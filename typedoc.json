@@ -1,0 +1,11 @@
+{
+  "entryPoints": [
+    "packages/biz-utils/src/index.ts",
+    "packages/biz-utils-node/src/index.ts",
+    "packages/biz-utils-common/src/index.ts"
+  ],
+  "plugin": ["typedoc-plugin-markdown"],
+  "out": "docs/apis",
+  "excludePrivate": true,
+  "excludeInternal": true
+}

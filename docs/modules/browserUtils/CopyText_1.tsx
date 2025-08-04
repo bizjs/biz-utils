@@ -15,7 +15,7 @@ export default () => {
         message.error('复制失败');
       });
   }
-  return (  
+  return (
     <Row>
       <Col span={12}>
         <Input.Group compact>

@@ -2,6 +2,9 @@ lib
 dist
 *.log
 node_modules
+**/.vitepress/dist
+**/.vitepress/cache
+docs/apis
 
 # production
 /dist

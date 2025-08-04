@@ -15,7 +15,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/CopyText_1.tsx" />
+<code src="./browserUtils/CopyText_1.tsx"></code>
 
 ## download 常规下载
 
@@ -27,7 +27,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/Download_1.tsx" />
+<code src="./browserUtils/Download_1.tsx"></code>
 
 ## downloadBlob 文件流下载
 
