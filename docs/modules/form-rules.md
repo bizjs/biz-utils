@@ -11,7 +11,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsChineseLandlineNumber_1.tsx" />
+<demo react="./formRules/IsChineseLandlineNumber_1.tsx" />
 
 ## isChinesePhoneNumber 手机号码
 
@@ -19,7 +19,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsChinesePhoneNumber_1.tsx" />
+<demo react="./formRules/IsChinesePhoneNumber_1.tsx" />
 
 ## IsEmail 邮箱
 
@@ -27,7 +27,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsEmail_1.tsx" />
+<demo react="./formRules/IsEmail_1.tsx" />
 
 ## isIdCardNo 身份证号
 
@@ -35,7 +35,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsIdCardNo_1.tsx" />
+<demo react="./formRules/IsIdCardNo_1.tsx" />
 
 ## isIpV4 IP V4
 
@@ -43,7 +43,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsIpV4_1.tsx" />
+<demo react="./formRules/IsIpV4_1.tsx" />
 
 ## isIpV6 IP V6
 
@@ -51,7 +51,7 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsIpV6_1.tsx" />
+<demo react="./formRules/IsIpV6_1.tsx" />
 
 ## isURL 网址
 
@@ -59,4 +59,4 @@ order: 15
 
 ### 样例
 
-<code src="./formRules/IsURL_1.tsx" />
+<demo react="./formRules/IsURL_1.tsx" />

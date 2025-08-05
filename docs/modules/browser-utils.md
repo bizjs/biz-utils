@@ -15,7 +15,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/CopyText_1.tsx"></code>
+<demo react="./browserUtils/CopyText_1.tsx" />
 
 ## download 常规下载
 
@@ -27,7 +27,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/Download_1.tsx"></code>
+<demo react="./browserUtils/Download_1.tsx" />
 
 ## downloadBlob 文件流下载
 
@@ -39,7 +39,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/DownloadBlob_1.tsx" />
+<demo react="./browserUtils/DownloadBlob_1.tsx" />
 
 ## getQuery 解析 URL Query
 
@@ -51,7 +51,7 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/GetQuery_1.tsx" />
+<demo react="./browserUtils/GetQuery_1.tsx" />
 
 ## openUrl 打开地址
 
@@ -64,4 +64,4 @@ order: 5
 
 ### 样例
 
-<code src="./browserUtils/OpenUrl_1.tsx" />
+<demo react="./browserUtils/OpenUrl_1.tsx" />

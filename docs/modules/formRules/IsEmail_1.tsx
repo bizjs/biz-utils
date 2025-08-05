@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Row, Col, Input, Button, message } from 'antd';
-import 'antd/dist/antd.less';
 import { isEmail } from '@bizjs/biz-utils';
 
 export default () => {

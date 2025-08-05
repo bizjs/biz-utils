@@ -11,7 +11,7 @@ order: 50
 
 ### 样例
 
-<code src="./numeralUtils/NumberAdd_1.tsx" />
+<demo react="./numeralUtils/NumberAdd_1.tsx" />
 
 ## numberSub 数值减法
 
@@ -19,7 +19,7 @@ order: 50
 
 ### 样例
 
-<code src="./numeralUtils/NumberSub_1.tsx" />
+<demo react="./numeralUtils/NumberSub_1.tsx" />
 
 ## numberMul 数值乘法
 
@@ -27,7 +27,7 @@ order: 50
 
 ### 样例
 
-<code src="./numeralUtils/NumberMul_1.tsx" />
+<demo react="./numeralUtils/NumberMul_1.tsx" />
 
 ## numberDiv 数值除法
 
@@ -35,4 +35,4 @@ order: 50
 
 ### 样例
 
-<code src="./numeralUtils/NumberDiv_1.tsx" />
+<demo react="./numeralUtils/NumberDiv_1.tsx" />
