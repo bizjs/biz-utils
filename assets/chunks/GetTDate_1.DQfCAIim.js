@@ -1,0 +1,1 @@
+import{a as e}from"./index.8eXSU4Wm.js";import{R as o,C as t}from"./row.DB6eLNzN.js";import{f as a,g as r}from"./dateUtils.iM9ePSmG.js";import"./framework.TVOr6Jn9.js";const p=()=>e.createElement(o,null,e.createElement(t,{span:6},"T + 2 的日期：",a(r(2),"date")),e.createElement(t,{span:6},"T - 2 的日期：",a(r(-2),"date")));export{p as default};
