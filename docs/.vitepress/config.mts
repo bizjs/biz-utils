@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,6 +8,11 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: 'assets/logo.webp' }]],
   outDir: '../docs-dist',
   base: '/biz-utils/',
+  markdown: {
+    config(md) {
+      md.use(vitepressDemoPlugin);
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'assets/logo.webp',

@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Examples
-      link: /docs/browser-utils
+      link: /modules/browser-utils
     - theme: alt
       text: APIs
       link: /apis/modules
