@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'antd';
-import 'antd/dist/antd.less';
 import { formatDate } from '@bizjs/biz-utils';
 
 export default () => {

@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Row, Col, Input, Button, message, Modal } from 'antd';
-import 'antd/dist/antd.less';
+import { Row, Col, Input, Button } from 'antd';
 import { getQuery } from '@bizjs/biz-utils';
 
 export default () => {

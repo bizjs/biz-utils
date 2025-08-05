@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Input, Button, message } from 'antd';
-import 'antd/dist/antd.less';
+import { Row, Col, Input, Button, Space } from 'antd';
 import { numberMul } from '@bizjs/biz-utils';
 
 export default () => {
@@ -15,7 +14,7 @@ export default () => {
   return (
     <Row>
       <Col span={24}>
-        <Input.Group compact>
+        <Space.Compact>
           <Input
             value={num1}
             placeholder="第一个操作数"
@@ -32,8 +31,8 @@ export default () => {
           <Button type="primary" onClick={doCalc} style={{ width: 40, marginLeft: 10, marginRight: 10 }}>
             =
           </Button>
-          <Input disabled value={total} style={{ width: 200 }} />
-        </Input.Group>
+          <Input readOnly value={total} style={{ width: 200 }} />
+        </Space.Compact>
       </Col>
     </Row>
   );

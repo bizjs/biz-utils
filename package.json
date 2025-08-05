@@ -29,7 +29,7 @@
     "@types/react": "^18.3.2",
     "@types/uuid": "^8.3.4",
     "@types/validator": "^13.11.10",
-    "antd": "^5.17.2",
+    "antd": "^5.26.7",
     "cross-env": "^10.0.0",
     "father": "^4.4.1",
     "fs-extra": "^11.3.0",
@@ -43,6 +43,8 @@
     "typedoc": "^0.28.9",
     "typedoc-plugin-markdown": "^4.8.0",
     "typescript": "^5.4.5",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vitepress-demo-plugin": "^1.4.7",
+    "@bizjs/biz-utils": "workspace:*"
   }
 }

@@ -15,7 +15,7 @@ order: 10
 
 ### 样例
 
-<code src="./dateUtils/FormatDate_1.tsx" />
+<demo react="./dateUtils/FormatDate_1.tsx" />
 
 ## getTDate 计算 T + N 日期
 
@@ -27,4 +27,4 @@ order: 10
 
 ### 样例
 
-<code src="./dateUtils/GetTDate_1.tsx" />
+<demo react="./dateUtils/GetTDate_1.tsx" />

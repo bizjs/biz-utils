@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import { Row, Col, Input, Button, Progress } from 'antd';
-import 'antd/dist/antd.less';
 import { downloadBlob } from '@bizjs/biz-utils';
 
 export default () => {
