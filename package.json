@@ -10,7 +10,7 @@
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "test:cov": "pnpm -r run test:cov",
-    "pub": "npm run build && pnpm publish -r --access public",
+    "release": "changeset publish",
     "tsc": "pnpm -r run tsc",
     "docs:pages": "gh-pages -d docs-dist -b gh-pages",
     "docs:apis": "typedoc --options ./typedoc.json",
