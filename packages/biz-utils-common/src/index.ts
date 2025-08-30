@@ -17,5 +17,7 @@ export { numberAdd, numberDiv, numberMul, numberSub } from './numeralUtils';
 // URL 相关的工具函数
 export { parseQuery, stringifyQuery, updateUrl } from './urlUtils';
 
+export { safeExecute, safeExecuteSync } from './biz-utils';
+
 // 通用的类型导出
 export type { UrlPartValues, UrlQuery } from './typings/lib.type';
