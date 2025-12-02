@@ -44,7 +44,7 @@
     "lodash": "^4.17.21",
     "url-parse": "^1.5.10",
     "uuid": "^3.4.0",
-    "validator": "^13.12.0"
+    "validator": "^13.15.22"
   },
   "devDependencies": {
     "@types/url-parse": "^1.4.11"
