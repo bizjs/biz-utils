@@ -41,7 +41,7 @@
   "dependencies": {
     "dayjs": "^1.11.11",
     "decimal.js": "^10.4.3",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "url-parse": "^1.5.10",
     "uuid": "^3.4.0",
     "validator": "^13.12.0"
