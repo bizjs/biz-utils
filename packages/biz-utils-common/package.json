@@ -32,9 +32,7 @@
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown",
-    "prepublishOnly2": "npm run build",
     "test": "jest",
-    "docs": "typedoc src/index.ts --out ../../dist/apis",
     "tsc": "tsc --noEmit",
     "test:cov": "jest --coverage"
   },

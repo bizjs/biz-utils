@@ -10,7 +10,7 @@
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "test:cov": "pnpm -r run test:cov",
-    "release": "changeset publish",
+    "ci:publish": "pnpm build && changeset publish",
     "tsc": "pnpm -r run tsc",
     "docs:pages": "gh-pages -d docs-dist -b gh-pages",
     "docs:apis": "typedoc --options ./typedoc.json",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@bizjs/biz-utils": "workspace:*",
+    "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.0",
     "@types/file-saver": "^2.0.7",
     "@types/jest": "^30.0.0",
