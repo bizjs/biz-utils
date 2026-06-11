@@ -3,15 +3,8 @@ import { ArgumentError } from '../src/errors';
 
 describe('browserUtils test', () => {
   describe('getQuery test', () => {
-    let spy: jest.SpyInstance<Location, []>;
     beforeEach(() => {
-      spy = jest.spyOn(window, 'location', 'get');
-      spy.mockImplementation(() => {
-        return { search: '?a=1&b=c&d&a=2' } as any;
-      });
-    });
-    afterEach(() => {
-      spy.mockClear();
+      window.history.replaceState({}, '', '/?a=1&b=c&d&a=2');
     });
 
     it('getQurey from location ok', () => {
