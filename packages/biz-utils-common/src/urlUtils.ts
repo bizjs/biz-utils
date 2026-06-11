@@ -1,6 +1,8 @@
-import URLParse, { qs } from 'url-parse';
+import URLParse from 'url-parse';
 import type { URLPart } from 'url-parse';
 import type { UrlPartValues, UrlQuery } from './typings/lib.type';
+
+const { qs } = URLParse;
 
 /**
  * 更新 URL

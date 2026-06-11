@@ -1,5 +1,7 @@
-import { saveAs } from 'file-saver';
+import FileSaver from 'file-saver';
 import { _ensureFunction, _isString, _openUrl } from './_internalUtils';
+
+const { saveAs } = FileSaver;
 import type { OpenUrlOptions, UrlQuery } from './typings/common';
 import { ArgumentError } from './errors';
 import { parseQuery, updateUrl } from '@bizjs/biz-utils-common';
