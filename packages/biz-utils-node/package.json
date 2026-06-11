@@ -9,21 +9,30 @@
   "author": "hstarorg <hm910705@163.com>",
   "homepage": "https://github.com/bizjs/biz-utils#readme",
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "types": "dist/cjs/index.d.ts",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.cjs",
+  "types": "dist/cjs/index.d.cts",
+  "module": "dist/esm/index.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.mts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    }
+  },
   "sideEffects": false,
   "files": [
     "dist",
     "!dist/__tests__"
   ],
   "scripts": {
-    "dev": "father dev",
-    "build": "father build",
-    "build:deps": "father prebundle",
-    "prepublishOnly2": "father doctor && npm run build",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "test": "jest",
-    "docs": "typedoc src/index.ts --out ../../dist/apis",
     "tsc": "tsc --noEmit",
     "test:cov": "jest --coverage"
   },
