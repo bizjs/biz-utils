@@ -1,2 +1,7 @@
 packages:
   - packages/*
+allowBuilds:
+  core-js: false
+  core-js-pure: false
+  esbuild: false
+  unrs-resolver: false
