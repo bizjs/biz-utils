@@ -48,6 +48,24 @@ describe('browserUtils test', () => {
       expect(document.execCommand).toHaveBeenCalledWith('copy');
     });
 
+    it('copyText uses async clipboard API in secure context', async () => {
+      const writeText = jest.fn().mockResolvedValue(undefined);
+      Object.defineProperty(window, 'isSecureContext', { value: true, configurable: true });
+      Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+
+      await copyText('Hello');
+      expect(writeText).toHaveBeenCalledWith('Hello');
+      expect(document.execCommand).not.toHaveBeenCalled();
+
+      Object.defineProperty(window, 'isSecureContext', { value: false, configurable: true });
+      Object.defineProperty(navigator, 'clipboard', { value: undefined, configurable: true });
+    });
+
+    it('copyText rejects when execCommand reports failure', async () => {
+      document.execCommand = jest.fn().mockReturnValue(false);
+      await expect(copyText('Hello')).rejects.toThrow('copy command failed');
+    });
+
     it('copyText argument error', async () => {
       expect(() => {
         copyText({} as any);

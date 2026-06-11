@@ -1,5 +1,4 @@
 import { saveAs } from 'file-saver';
-import Clipboard from 'clipboard';
 import { _ensureFunction, _isString, _openUrl } from './_internalUtils';
 import type { OpenUrlOptions, UrlQuery } from './typings/common';
 import { ArgumentError } from './errors';
@@ -96,26 +95,39 @@ export function downloadBlob(url: string, options?: DownloadBlobOptions): Promis
   });
 }
 
+/**
+ * 复制文本到剪贴板
+ *
+ * 优先使用异步 Clipboard API（不依赖 DOM 焦点，在 focus-trap 弹窗如
+ * Radix/Ant Modal 内也能工作）；非安全上下文（http 非 localhost）没有
+ * navigator.clipboard，降级为 execCommand——降级时 textarea 挂在当前焦点
+ * 元素旁而非 document.body，避免被弹窗焦点陷阱拦截导致选区为空。
+ * @param content 要复制的文本
+ */
 export function copyText(content: string): Promise<void> {
   if (!_isString(content)) {
     throw new ArgumentError('content must be string.', 'content');
   }
-  return new Promise((resolve, reject) => {
-    try {
-      const copyBtnEl = document.createElement('button');
-      copyBtnEl.setAttribute('data-clipboard-text', content);
-      const clipboardIns = new Clipboard(copyBtnEl);
-      clipboardIns.on('success', () => {
-        clipboardIns.destroy();
-        resolve();
-      });
-      clipboardIns.on('error', err => {
-        reject(err);
-      });
-      copyBtnEl.click();
-      copyBtnEl?.remove();
-    } catch (ex) {
-      reject(ex);
+
+  if (window.isSecureContext && navigator.clipboard) {
+    return navigator.clipboard.writeText(content);
+  }
+
+  const anchor =
+    document.activeElement instanceof HTMLElement ? document.activeElement.parentElement ?? document.body : document.body;
+  const textarea = document.createElement('textarea');
+  textarea.value = content;
+  textarea.style.cssText = 'position:fixed;opacity:0';
+  anchor.appendChild(textarea);
+  textarea.select();
+  try {
+    if (document.execCommand('copy') === false) {
+      return Promise.reject(new Error('copy command failed'));
     }
-  });
+    return Promise.resolve();
+  } catch (ex) {
+    return Promise.reject(ex);
+  } finally {
+    textarea.remove();
+  }
 }
